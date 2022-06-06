@@ -5,36 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!--<style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style>-->
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main>
+     <img class="img-caixa" src="images/illustration-box-desktop.svg" alt="caixa ilustrativa"> 
+    <h1> FAQ</h1>
+    <div class="faq">
+        <picture class="faq__mulher">
+            <source class="faq__mulher-desktop" srcset="./images/illustration-woman-online-desktop.svg"
+                media="(min-width: 1100px)">
+            <img class="faq__mulher-mobile" src="images/illustration-woman-online-mobile.svg" alt="ilustração mulher online">
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        </picture>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <div class="primeira_Pergunta">
+          How many team members can I invite?
+          <p class="primeira__Resposta">
+            You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+          </p>
+        </div>
+        <div class="segunda_Pergunta">
+          What is the maximum file upload size?
+          <p class="segunda__Resposta">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </div>
+        <div class="terceira_Pergunta">
+          How do I reset my password?
+          <p class="terceira__Resposta">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+        </div>
+        <div class="quarta_Pergunta">
+          Can I cancel my subscription?
+          <p class="quarta__Resposta">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+        </div>
+        <div class="quinta_Pergunta">
+          Do you provide additional support?
+          <p class="quinta__Resposta">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </div>    
+    </div>
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/lucashtw">Lucas Fernandes</a>.
   </div>
 </body>
 </html>
