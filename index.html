@@ -3,51 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!--<style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>-->
 </head>
 <body>
-  <main>
-     <img class="img-caixa" src="images/illustration-box-desktop.svg" alt="caixa ilustrativa"> 
-    <h1> FAQ</h1>
+  <main class="main">
+    <img class="img-caixa" src="images/illustration-box-desktop.svg" alt="caixa ilustrativa"> 
     <div class="faq">
-        <picture class="faq__mulher">
-            <source class="faq__mulher-desktop" srcset="./images/illustration-woman-online-desktop.svg"
-                media="(min-width: 1100px)">
-            <img class="faq__mulher-mobile" src="images/illustration-woman-online-mobile.svg" alt="ilustração mulher online">
-
-        </picture>
-
-
-        <div class="primeira_Pergunta">
-          How many team members can I invite?
-          <p class="primeira__Resposta">
+      <picture class="faq__mulher">
+        <source class="faq__mulher-desktop" srcset="./images/illustration-woman-online-desktop.svg"
+        media="(min-width: 1100px)">
+        <img class="faq__mulher-mobile" src="images/illustration-woman-online-mobile.svg" alt="ilustração mulher online">
+         
+      </picture>
+      <div class="faq__caixa">
+        <h1 class="faq__titulo"> FAQ</h1>  
+        <div class="faq__pergunta">
+          <input type="checkbox" id="item1">
+          <label class="faq__pergunta-1" for="item1">How many team members can I invite?
+          <img class="flecha" src="images/icon-arrow-down.svg">
+          </label>            
+          <p class="faq__resposta">
             You can invite up to 2 additional users on the Free plan. There is no limit on 
             team members for the Premium plan.
           </p>
         </div>
-        <div class="segunda_Pergunta">
-          What is the maximum file upload size?
-          <p class="segunda__Resposta">
-            No more than 2GB. All files in your account must fit your allotted storage space.
-          </p>
+          <div class="faq_pergunta">
+            <input type="checkbox" id="item2">
+            <label class="faq__pergunta-2" for="item2">What is the maximum file upload size?
+              <img class="flecha" src="images/icon-arrow-down.svg">
+            </label>            
+            <p class="faq__resposta">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </div>
+          <div class="faq_pergunta">
+            <input type="checkbox" id="item3">
+            <label class="faq__pergunta-3" for="item3">How do I reset my password?
+              <img class="flecha" src="images/icon-arrow-down.svg">
+            </label>            
+            <p class="faq__resposta">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </div>
+          
         </div>
-        <div class="terceira_Pergunta">
-          How do I reset my password?
-          <p class="terceira__Resposta">
-            Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </p>
-        </div>
+
         <div class="quarta_Pergunta">
           Can I cancel my subscription?
           <p class="quarta__Resposta">
@@ -61,11 +65,10 @@
           </p>
         </div>    
     </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/lucashtw">Lucas Fernandes</a>.
+    </div>
   </main>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/lucashtw">Lucas Fernandes</a>.
-  </div>
 </body>
 </html>
